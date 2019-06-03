@@ -8,7 +8,8 @@ var san_pham_schema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'danh_muc'
     },
-    anh_san_pham : String
+    anh_san_pham : String,
+    live_demo: String,
 });
 
 module.exports = mongoose.model('san_pham', san_pham_schema);
