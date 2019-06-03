@@ -5,7 +5,7 @@ var dich_vu_schema = new Schema({
     ten_dich_vu: String,
     create_date: {
         type: Date,
-        default: Date.UTC
+        default: Date.now
     }
 });
 
