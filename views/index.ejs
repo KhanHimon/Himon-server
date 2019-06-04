@@ -1,11 +1,399 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include layouts/client-header.ejs %>
+<section class="banner d-flex align-items-center">
+  <div class="container">
+    <div class="row no-gutters align-items-center">
+      <div class="col-lg-5 text-center text-lg-left">
+        <h1>Chào mừng bạn <br />đến với Himon Studio.</h1>
+        <p class="larger-txt">
+          Bạn đang tìm kiếm điều gì ở chúng tôi ? <br />
+          Ở đây chúng tôi có những dịch vụ : <br />
+          - Thiết kế và xây dựng website. <br />
+          - Lên ý tưởng và thiết kế Logo. <br />
+          - Thiết kế đồ họa 3D theo yêu cầu. <br /><b><b>
+              Phương châm :</b> Sự phát triển của bạn là niềm vui của chúng tôi.
+          </b>
+        </p>
+        <a href="#cynic-projects" class="custom-btn secondary-btn page-scroll">Xem qua dự án</a>
+      </div>
+      <div class="col-lg-7">
+        <div class="img-container text-center text-lg-right">
+          <img src="/assets/images/banner/onepage-home-banner-img.png" alt="Onepage home banner image"
+            class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="achievements section-gap theme-bg-d">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="counter-block d-flex align-items-center justify-content-center">
+          <div class="icon-container">
+            <img src="/assets/images/achievements/counter/counter-icon-1.png" alt="appyapp/public/" />
+          </div>
+          <div class="counter-wrapper">
+            <div class="number"><span class="counter">450</span>+</div>
+            Happy
+            <br />Clients
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="counter-block d-flex align-items-center justify-content-center">
+          <div class="icon-container">
+            <img src="/assets/images/achievements/counter/counter-icon-2.png" alt="appyapp/public/" />
+          </div>
+          <div class="counter-wrapper">
+            <div class="number"><span class="counter">4510</span>+</div>
+            Running
+            <br />Projects
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="counter-block d-flex align-items-center justify-content-center">
+          <div class="icon-container">
+            <img src="/assets/images/achievements/counter/counter-icon-3.png" alt="appyapp/public/" />
+          </div>
+          <div class="counter-wrapper">
+            <div class="number"><span class="counter">2500</span>+</div>
+            Project
+            <br />Completed
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="onepage-services light-grey-bg" id="cynic-services">
+  <div class="floating-service-wapper section-gap">
+    <div class="container">
+      <h2 class="section-title text-center">DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
+      <p class="larger-txt text-center">
+        Sự phát triển của bạn là niềm vui của chúng tôi.
+      </p>
+      <div class="grid-wapper">
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-6">
+            <div class="service-block text-center">
+              <img src="/assets/images/services/service-icon-1.png" alt="design" />
+              <h4>Branding</h4>
+              <p>
+                Giúp bạn xây dựng bộ nhận diện thương hiệu của cá nhân hoặc
+                doanh nghiệp của bạn
+              </p>
+              <div class="service-overlay">
+                <div class="facilities text-left">
+                  <div>
+                    <img src="/assets/images/icons/facilities/message.png" alt="image icon" />Unlimited Projects
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/network.png" alt="image icon" />Everyday Support
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/cloud.png" alt="image icon" />Monthly Updates
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/user.png" alt="image icon" />Free
+                    Domain
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/new-file.png" alt="image icon" />Privacy
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="service-block text-center">
+              <img src="/assets/images/services/service-icon-2.png" alt="design" />
+              <h4>Website</h4>
+              <p>Thiết kế và xây dựng website theo yêu cầu của khách hàng.</p>
+              <div class="service-overlay">
+                <div class="facilities text-left">
+                  <div>
+                    <img src="/assets/images/icons/facilities/message.png" alt="image icon" />Content Management System
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/user.png" alt="image icon" />MobileApp Development
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/new-file.png" alt="image icon" />eCommerce
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="service-block text-center">
+              <img src="/assets/images/services/service-icon-3.png" alt="design" />
+              <h4>Online Marketing</h4>
+              <p>
+                Pellentesque eget velit tempus, porta ante eu, consectetur augue
+                nunc mollis tincidunt felis porta ante eu.
+              </p>
+              <div class="service-overlay">
+                <div class="facilities text-left">
+                  <div>
+                    <img src="/assets/images/icons/facilities/message.png" alt="image icon" />Search Enginge
+                    Optimization
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/cloud.png" alt="image icon" />Pay-Per-Click
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/user.png" alt="image icon" />Email
+                    Marketing
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/network.png" alt="image icon" />Social Media Marketing
+                  </div>
+                  <div>
+                    <img src="/assets/images/icons/facilities/new-file.png" alt="image icon" />Display Marketing
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features light-grey-bg" id="cynic-about">
+  <div class="container">
+    <div class="features-grid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-left">
+          <div class="img-container">
+            <img src="/assets/images/features/features-img-1.png" alt="why choose us" class="img-fluid" />
+            <a href="https://www.youtube.com/watch?v=OJfOsoUYPts" class="video-popup feature-video-popup"></a>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="features-content text-center text-lg-left">
+            <h2 class="section-title">Lý do chọn chúng tôi</h2>
+            <p>
+              Nunc eu augue at nunc consectetur venenatis sit amet sodales
+              metus. Sed at gravida nisi, mattis lacinia ipsum. Pellentesque
+              suscipit odio quis ligula maximus aliquet. Integer cursus ipsum et
+              posuere ornare.
+            </p>
+            <a href="#" class="hyperlink">TÌM HIỂU THÊM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-grid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 offset-md-1 text-center text-lg-right">
+          <img src="/assets/images/features/features-img-2.png" alt="why choose us" class="img-fluid" />
+        </div>
+        <div class="col-lg-5">
+          <div class="features-content text-center text-lg-left">
+            <h2 class="section-title">
+              Chúng tôi có thể làm được những gì ?
+            </h2>
+            <p>
+              Nunc eu augue at nunc consectetur venenatis sit amet sodales
+              metus. Sed at gravida nisi, mattis lacinia ipsum. Pellentesque
+              suscipit odio quis ligula maximus aliquet. Integer cursus ipsum et
+              posuere ornare.
+            </p>
+            <a href="#" class="hyperlink">TÌM HIỂU THÊM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projects section-gap grey-bg" id="cynic-projects">
+  <div class="container">
+    <h2 class="section-title text-center">Các dự án nổi bật</h2>
+  </div>
+  <div class="project-showcase">
+    <div class="btn-filter-wrap nav nav-tabs justify-content-center">
+      <button class="btn-filter nav-link btn-active" data-filter="*">
+        <i class="ml-tro-3-trophy-cup-medallion-locket-win"></i>Tất cả
+      </button>
+      <button class="btn-filter nav-link" data-filter=".category-a">
+        <i class="ml-symtwo-34-cursor-click-browser-website-arrow-computer"></i>Website
+      </button>
+      <button class="btn-filter nav-link" data-filter=".category-b">
+        <i class="ml-des-9-blend-shape-graphics-design-tool-interface"></i>Logo
+      </button>
+      <button class="btn-filter nav-link" data-filter=".category-c">
+        <i class="ml-des-57-upload-download-syncapplication-device-mobile-computer"></i>MobileApp
+      </button>
+      <button class="btn-filter nav-link" data-filter=".category-d">
+        <i class="ml-des-82-Video-player-internet-social-watch"></i>Social Media
+      </button>
+    </div>
+    <div class="owl-carousel projects-carousel grid-wapper">
+      <div class="item category-a">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-1.jpg" alt="product" class="img-fluid" />
+          <h4><span>Cynic Classic Design</span>Web Design</h4>
+        </a>
+      </div>
+      <div class="item category-a category-d">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-2.jpg" alt="product" class="img-fluid" />
+          <h4><span>Diet Hospital</span>Social Media</h4>
+        </a>
+      </div>
+      <div class="item category-b">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-3.jpg" alt="product" class="img-fluid" />
+          <h4><span>Repo Deshboard Design</span>Logo Design</h4>
+        </a>
+      </div>
+      <div class="item category-c category-d">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-4.jpg" alt="product" class="img-fluid" />
+          <h4><span>Cynic Classic Design</span>Social Media</h4>
+        </a>
+      </div>
+      <div class="item category-a">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-5.jpg" alt="product" class="img-fluid" />
+          <h4><span>Diet Hospital</span>Web Design</h4>
+        </a>
+      </div>
+      <div class="item category-c">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-6.jpg" alt="product" class="img-fluid" />
+          <h4><span>Repo Deshboard Design</span>MobileApp Development</h4>
+        </a>
+      </div>
+      <div class="item category-b">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-7.jpg" alt="product" class="img-fluid" />
+          <h4><span>Cynic Classic Design</span>Logo Design</h4>
+        </a>
+      </div>
+      <div class="item category-b category-a">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-8.jpg" alt="product" class="img-fluid" />
+          <h4><span>Diet Hospital</span>Logo Design</h4>
+        </a>
+      </div>
+      <div class="item category-c">
+        <a href="#" class="img-card text-center" data-toggle="modal" data-target="#product-modal">
+          <img src="/assets/images/products/product-9.jpg" alt="product" class="img-fluid" />
+          <h4><span>Repo Deshboard Design</span>MobileApp Development</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="newsletter section-gap theme-bg-d">
+  <div class="container">
+    <h3 class="text-center">
+      Liên hệ với chúng tôi <br />để được tư vấn
+    </h3>
+
+    <form action="#" class="newsletter-form" method="POST">
+      <div class="row justify-content-between">
+        <div class="col-md">
+          <input type="text" name="fname" placeholder="Name" />
+        </div>
+        <div class="col-md">
+          <input type="text" name="email" placeholder="Email" />
+        </div>
+
+        <div class="col-md">
+          <a href="#" class="custom-btn secondary-btn">GỬI NGAY</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="social-icons-wapper d-flex justify-content-center">
+      <p>Theo dõi chúng tôi:</p>
+      <ul class="social-icons">
+        <li>
+          <a href="http://www.facebook.com/" target="_blank" rel="noopener">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://twitter.com/" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://youtube.com/" target="_blank" rel="noopener">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://plus.google.com/discover" target="_blank" rel="noopener">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="latest-news section-gap" id="cynic-news">
+  <div class="container">
+    <h2 class="section-title text-center">Tin mới nhất</h2>
+    <p class="larger-txt text-center">
+      Tin tức mới nhất về công nghệ trên thế giới
+    </p>
+    <div class="grid-wapper">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <a href="#" class="img-card news-card text-center" data-toggle="modal" data-target="#news-modal">
+            <img src="/assets/images/news/homepage/news-1.jpg" alt="news image" class="img-fluid" />
+            <h4>
+              17 May, 2018
+              <span>Digital Marketo Moved to Their New Office</span>
+            </h4>
+            <p>
+              Nunc eu augue at nunc consectetur venenatis sit amet sodales
+              metus. Sed at gravida nisi, mattis lacinia ipsum.
+            </p>
+            <div class="read-more">ĐỌC THÊM</div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <a href="#" class="img-card news-card text-center" data-toggle="modal" data-target="#news-modal">
+            <img src="/assets/images/news/homepage/news-2.jpg" alt="news image" class="img-fluid" />
+            <h4>
+              18 May, 2018
+              <span>Welcome to Our New Head of Production</span>
+            </h4>
+            <p>
+              Nunc eu augue at nunc consectetur venenatis sit amet sodales
+              metus. Sed at gravida nisi, mattis lacinia ipsum.
+            </p>
+            <div class="read-more">ĐỌC THÊM</div>
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <a href="#" class="img-card news-card text-center" data-toggle="modal" data-target="#news-modal">
+            <img src="/assets/images/news/homepage/news-3.jpg" alt="news image" class="img-fluid" />
+            <h4>
+              20 May, 2018
+              <span>Axilweb Launched Their Website PrototypingApp</span>
+            </h4>
+            <p>
+              Nunc eu augue at nunc consectetur venenatis sit amet sodales
+              metus. Sed at gravida nisi, mattis lacinia ipsum.
+            </p>
+            <div class="read-more">ĐỌC THÊM</div>
+          </a>
+        </div>
+
+        <div class="col-lg-12 text-center">
+          <a href="#" class="custom-btn secondary-btn">ĐỌC THÊM TIN TỨC</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% include layouts/client-footer.ejs %>
